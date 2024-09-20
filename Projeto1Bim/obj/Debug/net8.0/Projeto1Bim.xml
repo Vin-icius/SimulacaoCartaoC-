@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Projeto1Bim</name>
+    </assembly>
+    <members>
+        <member name="M:Projeto1Bim.Controllers.CartoesController.ObterBandeira(System.String)">
+             <summary>
+            •    Este endpoint recebe o número do cartão de crédito e retorna sua bandeira (VISA, MASTERCARD, ELO...) de acordo com a regra de negócio fictícia dada a seguir, que considera os primeiros 4 dígitos do número e o 8º do cartão (BIN): 
+             o	1111-XXX-X1X-XXX: VISA
+             o	2222-XXX-X2X-XXX: MASTERCARD
+             o	3333-XXX-X3X-XXX: ELO
+             </summary>
+             <returns>
+             •	Retorne 200 + a bandeira do cartão ou 404.
+             </returns>
+        </member>
+        <!-- Badly formed XML comment ignored for member "M:Projeto1Bim.Service.CartaoService.ObterBandeira(System.String)" -->
+        <member name="M:Projeto1Bim.Service.CartaoService.Valido(System.String)">
+            <summary>
+            •	Este endpoint recebe o número do cartão de crédito e retorna um valor booleano indicando se o cartão é válido.
+                Isso deve ser feito verificando sua existência e validade do cartão na tabela "CARTAO".
+            </summary>
+            <param name="cartao"></param>
+            <returns>Cartão ou Null.</returns>
+        </member>
+    </members>
+</doc>
